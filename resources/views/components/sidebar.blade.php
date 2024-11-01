@@ -36,63 +36,27 @@
         </li>
         <!--approved Area -->
         <li class="sidebar-menu-title">Approved</li>
-        <li>
-          <a href="chat.html" class="navItem">
-            <span class="flex items-center">
-          <iconify-icon class="nav-icon" icon="heroicons-outline:chat"></iconify-icon>
-          <span>Chat</span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a href="email.html" class="navItem">
-            <span class="flex items-center">
-          <iconify-icon class=" nav-icon" icon="heroicons-outline:mail"></iconify-icon>
-          <span>Email</span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a href="kanban.html" class="navItem">
-            <span class="flex items-center">
-          <iconify-icon class=" nav-icon" icon="heroicons-outline:view-boards"></iconify-icon>
-          <span>Kanban</span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a href="calander.html" class="navItem">
-            <span class="flex items-center">
-          <iconify-icon class=" nav-icon" icon="heroicons-outline:calendar"></iconify-icon>
-          <span>Calander</span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a href="todo.html" class="navItem">
-            <span class="flex items-center">
-          <iconify-icon class=" nav-icon" icon="heroicons-outline:clipboard-check"></iconify-icon>
-          <span>Todo</span>
-            </span>
-          </a>
-        </li>
         <li class="">
           <a href="javascript:void(0)" class="navItem">
             <span class="flex items-center">
           <iconify-icon class=" nav-icon" icon="heroicons-outline:document"></iconify-icon>
-          <span>Projects</span>
+          <span>Report</span>
             </span>
             <iconify-icon class="icon-arrow" icon="heroicons-outline:chevron-right"></iconify-icon>
           </a>
           <ul class="sidebar-submenu">
             <li>
-              <a href="project.html">Projects</a>
+              <a href="{{ route('reportPermintaan.index') }}">Report Permintaan</a>
             </li>
             <li>
-              <a href="project-details.html">Project Details</a>
+              <a href="{{ route('reportPerbaikan.index') }}">Report Perbaikan</a>
+            </li>
+            <li>
+              <a href="{{ route('reportPerhapusan.index') }}">Report Perhapusan</a>
             </li>
           </ul>
         </li>
+        
         <!-- Pages Area -->
         <li class="sidebar-menu-title">PAGES</li>
         <!-- Authentication -->
