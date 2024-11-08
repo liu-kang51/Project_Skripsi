@@ -66,15 +66,7 @@
                         <!-- Submit Button -->
                         <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white font-medium rounded hover:bg-blue-600">Simpan Data</button>
                     </form>
-                </div>
-                
-
-
-
-
-
-
-                  
+                </div>  
                         </div>
                       </div>
                     </div>

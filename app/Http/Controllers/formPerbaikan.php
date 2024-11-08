@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Perbaikan;
 use Illuminate\Http\Request;
 
 class formPerbaikan extends Controller
@@ -27,7 +28,17 @@ class formPerbaikan extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $harga = (int) preg_replace('/\D/', '', $request->harga); 
+
+        $perbaikan = new perbaikan();
+        $perbaikan->nama_barang = $request->nama_barang;
+        $perbaikan->nama_pengajuan = $request->nama_pengajuan;
+        $perbaikan->kode_barang_plat = $request->kode_barang_plat;
+        $perbaikan->tanggal = $request->tanggal;
+        $perbaikan->harga = $harga;
+        $perbaikan->keterangan_kerusakan = $request->keterangan_kerusakan;
+        $perbaikan->save();
+        return redirect()->route('reportPerbaikan.index');
     }
 
     /**
